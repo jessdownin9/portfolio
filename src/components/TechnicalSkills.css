@@ -1,0 +1,19 @@
+#technicalSkills {
+    background-color: #F0F1F3;
+    transform: translate(0, -4em);
+    padding: 8em;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#technicalSkills .leftcolumn {
+    max-width: 40%;
+}
+
+#technicalSkills .rightcolumn {
+    display: flex;
+    align-items: center;
+}

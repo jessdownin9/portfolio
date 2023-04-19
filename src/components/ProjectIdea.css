@@ -1,0 +1,26 @@
+.projectIdea {
+    background-color: #132238;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectIdea h2, .projectIdea p {
+    color: white;
+    text-align: center;
+}
+
+.projectIdea h2 {
+    margin: 0;
+}
+
+.projectIdea p {
+    margin: 2em;
+}
+
+.projectIdea .button img {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,28 @@
+#home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home .leftcolumn {
+    max-width: 30rem;
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+}
+
+#home p {
+    margin: 2rem 0;
+}
+
+#home .imgcontainer {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 1.6rem;
+    box-shadow: 0px 24px 116px rgba(43, 56, 76, 0.09);
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+}

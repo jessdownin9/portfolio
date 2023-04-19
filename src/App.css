@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+.app {
+  font-family: 'Work Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  background-color: white;
+  border-radius: 0.24rem;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #A53DFF;
+  border: 1px solid #A53DFF;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button:hover {
+  background-color: #A53DFF;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
 
-.App-link {
-  color: #61dafb;
+.buton:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.firstbackground {
+  background-image: url('./images/homeBackground.png');
+  background-size: cover;
+  padding: 5em;
+  padding-bottom: 0;
+}
+
+p {
+  font-family: 400;
+  line-height: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
 }

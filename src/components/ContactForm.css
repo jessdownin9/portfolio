@@ -1,0 +1,45 @@
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contactform label {
+    color: #697484;
+}
+
+.contactform input:active {
+    border-bottom: 1.5px solid #A53DFF;
+}
+
+.contactform input {
+    border: none;
+    border-bottom: 1.5px solid #E6E8EB;
+    margin-bottom: 1rem;
+}
+
+.contactform textarea {
+    border: 1.5px solid #E6E8EB;
+    margin-bottom: 1rem;
+    height: 3.5rem;
+}
+
+.contactform .button {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.contactform .button img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,19 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+}
+
+.navBar .link {
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navBar .link:hover {
+    background-color: #A53DFF;
+    border-radius: 0.24rem;
+    color: white;
+    border: 1px solid #A53DFF;
+}
