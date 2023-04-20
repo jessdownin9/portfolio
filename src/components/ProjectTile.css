@@ -4,7 +4,7 @@
     border-radius: 0.5rem;
     width: 23rem;
     height: 25rem;
-    margin: 1em;
+    margin: 1rem;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
 }
 
@@ -46,4 +46,11 @@
     height: 2rem;
     margin-right: 1rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .projectTile {
+        width: 18rem;
+        height: 28rem;
+    }
 }

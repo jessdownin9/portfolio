@@ -17,3 +17,9 @@
 #projects .projectTiles {
     display: flex;
 }
+
+@media screen and (max-width: 1200px) {
+    #projects .projectTiles {
+        flex-direction: column;
+    }
+}

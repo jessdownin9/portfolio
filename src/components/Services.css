@@ -14,6 +14,25 @@
     max-width: 45%;
 }
 
-#services .leftcolumn .purplebutton {
+#services .leftcolumn .button {
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 900px) {
+    #services {
+        flex-direction: column;
+        padding: 3em;
+    }
+
+    #services .leftcolumn {
+        max-width: 100%;
+    }
+    
+    #services .rightcolumn {
+        max-width: 100%;
+    }
+
+    #services .leftcolumn .button {
+        margin-bottom: 2rem;
+    }
+  }

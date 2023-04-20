@@ -20,6 +20,7 @@
 
 #contact .contactheader h2 {
     margin: 0;
+    text-align: center;
 }
 
 #contact .contactheader p {
@@ -65,4 +66,34 @@
 
 #contact .iconcontainer img {
     width: 100%;
+}
+
+/* Tablets */
+@media screen and (max-width: 1050px) {
+    #contact .contactcolumns {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #contact .leftcolumn {
+        max-width: 90%;
+    }
+
+    #contact .rightcolumn {
+        width: 90%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: #A53DFF 2px solid;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #contact {
+        padding: 1em 2em 0;
+    }
+
+    #contact .contactbox {
+        padding: 1em;
+    }
 }

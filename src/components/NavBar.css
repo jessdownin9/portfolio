@@ -1,19 +1,119 @@
-.navBar {
+.navBar .spreadnavbar {
     display: flex;
     justify-content: flex-end;
     padding: 0.5em;
 }
 
-.navBar .link {
+.navBar .spreadnavbar .link {
     padding: 1em;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 }
 
-.navBar .link:hover {
+.navBar .spreadnavbar .link:hover {
     background-color: #A53DFF;
     border-radius: 0.24rem;
     color: white;
     border: 1px solid #A53DFF;
+}
+
+.navBar .hamburgermenu {
+    visibility: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navBar .spreadnavbar {
+        display: none;
+    }
+
+    .navBar .hamburgermenu {
+        visibility: visible;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+    
+    #menu-toggle ~ .menu .link {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    #menu-toggle:checked ~ .menu .link {
+        height: 1em;
+        padding: 1em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+    }
+
+    .menu-button-container {
+        display: flex;
+        height: 100%;
+        width: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2em;
+        right: 1em;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: block;
+        background-color: black;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+    }
+    
+    .menu-button::before {
+        content: '';
+        margin-top: -8px;
+    }
+    
+    .menu-button::after {
+        content: '';
+        margin-top: 8px;
+    }
+
+    .menu {
+        display: flex;
+        margin: 1rem;
+        position: absolute;
+        margin-top: 3.5rem;
+        right: 0;
+        flex-direction: column;
+        width: 5rem;
+        align-items: center;
+        padding: 1rem;
+        background-color: white;
+    }
+    
+    .menu > .link {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+        box-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
+    }
 }

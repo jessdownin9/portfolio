@@ -24,3 +24,9 @@
     height: 0.75rem;
     margin-left: 0.5rem;
 }
+
+@media screen and (max-width: 400px) {
+    .projectIdea {
+        padding: 3em 1em;
+    }
+}
