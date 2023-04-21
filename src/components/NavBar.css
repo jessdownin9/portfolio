@@ -19,7 +19,7 @@
 }
 
 .navBar .hamburgermenu {
-    visibility: none;
+    display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -28,7 +28,7 @@
     }
 
     .navBar .hamburgermenu {
-        visibility: visible;
+        display: unset;
     }
 
     #menu-toggle {
@@ -65,7 +65,6 @@
 
     .menu-button-container {
         display: flex;
-        height: 100%;
         width: 2rem;
         cursor: pointer;
         position: absolute;
