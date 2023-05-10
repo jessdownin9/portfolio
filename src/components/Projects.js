@@ -30,7 +30,7 @@ export const Projects = () => {
                     imgUrl='groceryList'
                     technologies='TypeScript, Angular'
                     title='Grocery List'
-                    description='Allows users to organize and share grocery lists. Currently under construction.' 
+                    description='Allows users to organize and share grocery lists. U/C.' 
                     gitHubLink='https://github.com/jessdownin9/grocery-list'
                     siteLink=''
                 />
