@@ -27,11 +27,11 @@ export const Projects = () => {
                     siteLink='https://lilreddit.netlify.app/'
                 />
                 <ProjectTile
-                    imgUrl='groceryCart'
-                    technologies='TBD'
+                    imgUrl='groceryList'
+                    technologies='TypeScript, Angular'
                     title='Grocery List'
-                    description='Currently under construction' 
-                    gitHubLink=''
+                    description='Allows users to organize and share grocery lists. Currently under construction.' 
+                    gitHubLink='https://github.com/jessdownin9/grocery-list'
                     siteLink=''
                 />
             </div>
